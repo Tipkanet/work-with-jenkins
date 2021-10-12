@@ -31,10 +31,10 @@ public class TestBase {
         String login = credentials.login();
         String password = credentials.password();
 
-        String path = "selenoid.autotests.cloud/wd/hub/";
+        String path = System.getProperty("selenoid_path", "selenoid");
+//        String path = System.getProperty("selenoid_path", "selenoid.autotests.cloud/wd/hub/");
 
         Configuration.remote = format("https://%s:%s@%s", login, password, path);
-//        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
     }
 
     @AfterEach

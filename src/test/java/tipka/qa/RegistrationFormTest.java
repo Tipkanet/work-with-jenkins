@@ -1,6 +1,7 @@
 package tipka.qa;
 
 import com.github.javafaker.Faker;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import tipka.qa.helpers.TestBase;
 import tipka.qa.pages.RegistrationPage;
@@ -15,6 +16,7 @@ import static io.qameta.allure.Allure.step;
 import static java.lang.Integer.parseInt;
 import static tipka.qa.pages.TestData.*;
 
+@Tag("properties")
 public class RegistrationFormTest extends TestBase {
 
     RegistrationPage registrationPage = new RegistrationPage();

@@ -37,7 +37,7 @@ public class SystemPropertiesTest {
     }
 
     @Test
-    @Tag("properties")
+//    @Tag("properties")
     void someTest4() {
         String value = System.getProperty("browser", "chrome");
         System.out.println(value);
@@ -49,7 +49,7 @@ public class SystemPropertiesTest {
     }
 
     @Test
-    @Tag("properties")
+//    @Tag("properties")
     void someTest5() {
         String browser = System.getProperty("browser", "chrome");
         String version = System.getProperty("version", "91");
