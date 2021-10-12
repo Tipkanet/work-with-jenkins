@@ -13,7 +13,7 @@ public class OwnerTests {
             ConfigFactory.create(CredentialsConfig.class);
 
     @Test
-    @Tag("properties")
+//    @Tag("properties")
     void readCredentialsTest() {
 
         String login = credentials.login();
