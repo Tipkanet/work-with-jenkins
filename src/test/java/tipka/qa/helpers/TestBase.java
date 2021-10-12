@@ -31,8 +31,8 @@ public class TestBase {
         String login = credentials.login();
         String password = credentials.password();
 
-        String path = System.getProperty("selenoid_path");
-//        String path = System.getProperty("selenoid_path", "selenoid.autotests.cloud/wd/hub/");
+//        String path = System.getProperty("selenoid_path");
+        String path = System.getProperty("selenoid_path", "selenoid.autotests.cloud/wd/hub/");
 
         Configuration.remote = format("https://%s:%s@%s", login, password, path);
     }
