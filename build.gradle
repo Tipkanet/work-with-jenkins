@@ -50,7 +50,7 @@ tasks.withType(Test) {
 }
 
 task properties_tests(type: Test) {
-    systemProperty("selenoid_path", System.getProperty("selenoid_path"))
+    systemProperty("selenoid_path", System.getProperty("selenoid_path","path"))
     useJUnitPlatform {
         includeTags "properties"
     }
