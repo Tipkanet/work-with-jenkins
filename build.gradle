@@ -53,12 +53,12 @@ tasks.withType(Test) {
     }
 }
 
-task properties_tests(type: Test) {
-    systemProperty("browserSize", System.getProperty("browserSize", "400x400"))
-    useJUnitPlatform {
-        includeTags "properties"
-    }
-}
+//task properties_tests(type: Test) {
+//    systemProperty("browserSize", System.getProperty("browserSize", "400x400"))
+//    useJUnitPlatform {
+//        includeTags "properties"
+//    }
+//}
 
 //task owner_tests(type: Test) {
 //    useJUnitPlatform {
@@ -66,10 +66,10 @@ task properties_tests(type: Test) {
 //    }
 //}
 
-task many_tags_tests(type: Test) {
-    useJUnitPlatform {
-        includeTags "properties"
-        includeTags "smoke"
-        excludeTags "prod"
-    }
-}
+//task many_tags_tests(type: Test) {
+//    useJUnitPlatform {
+//        includeTags "properties"
+//        includeTags "smoke"
+//        excludeTags "prod"
+//    }
+//}
