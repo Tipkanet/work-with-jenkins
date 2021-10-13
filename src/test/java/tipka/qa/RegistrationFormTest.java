@@ -16,13 +16,14 @@ import static io.qameta.allure.Allure.step;
 import static java.lang.Integer.parseInt;
 import static tipka.qa.pages.TestData.*;
 
-@Tag("properties")
+
 public class RegistrationFormTest extends TestBase {
 
     RegistrationPage registrationPage = new RegistrationPage();
     Faker faker = new Faker();
     String name, surname,email, day,month,year,address;
 
+    @Tag("properties")
     @Test
     void fillFormTest() {
 
