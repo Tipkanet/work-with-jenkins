@@ -22,6 +22,7 @@ public class TestBase {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
+
         Configuration.browserCapabilities = capabilities;
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.startMaximized = true;
@@ -29,6 +30,7 @@ public class TestBase {
         CredentialsConfig credentials = ConfigFactory.create(CredentialsConfig.class);
         String login = credentials.login();
         String password = credentials.password();
+
 //        gradle clean properties_tests -Dremote=selenoid.autotests.cloud/wd/hub/
 //        String path = System.getProperty("remote");
         String path = System.getProperty("remote").replace("_", ".");
