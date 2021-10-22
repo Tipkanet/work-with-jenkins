@@ -31,13 +31,13 @@ public class RegistrationFormTest extends TestBase {
     }
 
     @Test
-    @Disabled
+//    @Disabled
     void shouldPassToo() {
         Assertions.assertTrue(true);
     }
 
     @Test
-    @Disabled
+//    @Disabled
     void shouldNotPass() {
         Assertions.assertTrue(false);
     }
