@@ -37,6 +37,7 @@ public class RegistrationFormTest extends TestBase {
     }
 
     @Test
+    @Disabled
     void shouldNotPass() {
         Assertions.assertTrue(false);
     }

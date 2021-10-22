@@ -8,7 +8,7 @@
     "base": {
       "lang": "en",
       "messenger": "telegram",
-      "allureFolder": "C:/Users/tipka/AppData/Local/Temp/7904498427262070992/allure-report/",
+      "allureFolder": "C:/Users/tipka/AppData/Local/Temp/1389606249784454586/allure-report/",
       "allureLinkPath": "allure",
       "chart": true,
       "chartName": "",
