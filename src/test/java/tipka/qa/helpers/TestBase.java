@@ -31,8 +31,7 @@ public class TestBase {
         String login = credentials.login();
         String password = credentials.password();
 
-//        gradle clean properties_tests -Dremote=selenoid.autotests.cloud/wd/hub/
-//        String path = System.getProperty("remote").replace("_", ".");
+//        gradle clean properties_tests -Dremote='selenoid.autotests.cloud/wd/hub/'
         String path = System.getProperty("remote");
         Configuration.remote = format("https://%s:%s@%s", login, password, path);
     }
