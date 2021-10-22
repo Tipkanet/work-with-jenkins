@@ -2,6 +2,7 @@ package tipka.qa;
 
 import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import tipka.qa.helpers.TestBase;
@@ -30,6 +31,7 @@ public class RegistrationFormTest extends TestBase {
     }
 
     @Test
+    @Disabled
     void shouldPassToo() {
         Assertions.assertTrue(true);
     }
