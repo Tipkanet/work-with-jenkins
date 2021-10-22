@@ -1,6 +1,7 @@
 package tipka.qa;
 
 import com.github.javafaker.Faker;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import tipka.qa.helpers.TestBase;
@@ -22,6 +23,21 @@ public class RegistrationFormTest extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
     Faker faker = new Faker();
     String name, surname,email, day,month,year,address;
+
+    @Test
+    void shouldPass() {
+        Assertions.assertTrue(true);
+    }
+
+    @Test
+    void shouldPassToo() {
+        Assertions.assertTrue(true);
+    }
+
+    @Test
+    void shouldNotPass() {
+        Assertions.assertTrue(false);
+    }
 
     @Test
     void fillFormTest() {
